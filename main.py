@@ -88,9 +88,6 @@ def find_tag():
                     tag_stack[-1] == html_tag
                 ):  # if previous tag_stack value is the same as html_tag
                     tag_stack.pop()  # pop previous tag_stack value
-                else:  # if previous tag_stack value is not the same as html_tag
-                    if html_tag in tag_stack:  # if html_tag is found in tag_stack
-                        tag_stack.remove(html_tag)  # remove html_tag from tag_stack
     return tag_stack  # return the stack or list of tags // incorrect or wrongly formatted tags in html file
 
 
@@ -98,11 +95,9 @@ def find_tag():
 def main():
     tag_stack = find_tag()  # all the find_tag function
     if len(tag_stack) == 0:  # if the length of the tag_stack is 0
-        print("No HTML blocks are open (HTML file is formatted correctly).")
+        print("HTML file is formatted correctly.")
     else:  # if the length of the tag_stack is > 0
-        print(
-            f"The HTML blocks still open are: {tag_stack}"
-        )  # displays incorrect / wrongly formatted HTML blocks
+        print("HTML file is formatted incorrectly.")
     print(
         "Program finished in:", time_counter(time_start), "ms."
     )  # displays time since program execution
