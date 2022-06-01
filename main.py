@@ -13,6 +13,10 @@
 # FUTURE IMPLEMENTATIONS:
 # - correct names for HTML tags/elements/attributes
 # - formatting HTML documents/files similar to a module called BeautifulSoup (BS)
+#
+# EDIT:
+# - slight change regarding comments (mainly program description)
+# - minor code changes
 
 # imports and initial vals
 import time
