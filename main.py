@@ -2,13 +2,13 @@
 # ICS4U-A Assignment: Data Structures and Algorithms (J. Garvin)
 # Date: 05-31-2022
 #
-# Program opens desired HTML file or document, reads it, then displays HTML blocks
-# that are wrongly formatted. Program uses a stack to parse data from the HTML document.
-# Exceptions and program crashes are also handled. Program does NOT support correct
-# HTML attributes/elements/tags, and is only used for checking HTML tags/blocks that
-# are wrongly formatted. Program handles cases where some HTML tags do not containing
-# closing pairs such as HTML image attributes/elements. Program is able to handle cases
-# where HTML blocks and tags all reside in the same line (without indents).
+# Program opens desired HTML file or document, reads it, then displays HTML blocks.
+# Program uses a stack to parse data from the HTML document. Exceptions and program
+# crashes are also handled. Program does NOT support correct HTML attributes/elements/tags,
+# and is only used for checking HTML tags/blocks that are wrongly formatted. Program
+# handles cases where some HTML tags do not containing closing pairs such as HTML image
+# attributes/elements. Program is able to handle cases where HTML blocks and tags all reside
+# in the same line (without indents).
 #
 # FUTURE IMPLEMENTATIONS:
 # - correct names for HTML tags/elements/attributes
